@@ -14,7 +14,24 @@ To write a Python program that filters out and returns all elements from a list 
 5. Print the final filtered list.
 
 ## 🧾 Program
-Add code here
-## Output
+import re
 
+text = input("Enter words: ")
+
+words = text.split()
+
+result = [word for word in words if not re.search(r'e', word, re.IGNORECASE)]
+
+print("Words without 'e':")
+for word in result:
+    print(word)
+
+## Output
+Enter words: apple mango sky tree sun ball
+Words without 'e':
+mango
+sky
+sun
+ball
 ## Result
+Thus, the Python program using Regular Expressions to filter and display words without the letter 'e' was successfully executed and verified.

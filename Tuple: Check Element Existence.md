@@ -10,8 +10,22 @@ To write a Python program that checks if the element `'n'` and the element `8` e
 4. Print the results.
 
 ## 🧾 Program
-Add code here
+
+t = tuple(map(int, input("Enter tuple elements separated by space: ").split()))
+
+element = int(input("Enter element to search: "))
+
+if element in t:
+    print("Element found in the tuple")
+else:
+    print("Element not found in the tuple")
+
+
 
 ## Output
+Enter tuple elements separated by space: 10 20 30 40 50
+Enter element to search: 30
+Element found in the tuple
 
 ## Result
+Thus, the Python program to check the existence of an element in a tuple was successfully executed and verified.
